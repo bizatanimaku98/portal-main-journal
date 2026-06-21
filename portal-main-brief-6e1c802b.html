@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雨燕直播 · 日常查询与对照指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f2f4f7;
+            color: #1e2a3a;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+        }
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* ---------- 卡片系统 ---------- */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e6eaef;
+            border-radius: 20px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.03);
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s ease;
+        }
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04), 0 4px 10px rgba(0, 0, 0, 0.02);
+        }
+
+        /* ---------- 版式细节 ---------- */
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 450;
+            letter-spacing: -0.02em;
+            color: #1a2635;
+        }
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 440;
+            color: #233044;
+            margin-top: 0.2rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid #b0c4d8;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 460;
+            margin-bottom: 0.5rem;
+            color: #1f2e41;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .hero-sub {
+            font-size: 1.15rem;
+            color: #3d5068;
+            margin-top: 0.6rem;
+        }
+        a {
+            color: #1f509e;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+        a:hover {
+            border-bottom-color: #1f509e;
+            color: #0c3a7a;
+        }
+
+        /* ---------- 亮点网格 ---------- */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 1rem 0 0.4rem;
+        }
+        .feature-item {
+            background: #f8faff;
+            border: 1px solid #e0e8f0;
+            border-radius: 16px;
+            padding: 1.2rem 1.2rem 1.4rem;
+        }
+        .feature-item h4 {
+            font-weight: 480;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: #182b40;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #31475e;
+            margin-bottom: 0;
+        }
+
+        /* ---------- 使用建议 & FAQ 片段 ---------- */
+        .usage-list {
+            list-style: none;
+        }
+        .usage-list li {
+            padding: 0.8rem 0 0.3rem 0;
+            border-bottom: 1px solid #ebeff5;
+        }
+        .usage-list li:last-child {
+            border-bottom: none;
+        }
+        .usage-list strong {
+            font-weight: 500;
+            color: #15324b;
+            margin-right: 0.4rem;
+        }
+
+        .faq-slim {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .faq-slim div {
+            background: #f7fafd;
+            border-radius: 14px;
+            padding: 0.9rem 1.2rem;
+            border: 1px solid #e7ecf3;
+        }
+        .faq-slim .q {
+            font-weight: 500;
+            color: #1d334a;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .faq-slim .a {
+            display: block;
+            color: #3d5670;
+            font-size: 0.95rem;
+        }
+
+        /* ---------- 提示条 ---------- */
+        .note {
+            background: #eef3f9;
+            border-radius: 40px;
+            padding: 0.9rem 1.6rem;
+            color: #1e3b5a;
+            font-size: 0.98rem;
+            margin-top: 1.2rem;
+            border: 1px solid #d5e1ed;
+            display: inline-block;
+        }
+
+        /* ---------- 响应式 ---------- */
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .card {
+                padding: 1.4rem 1.2rem;
+                border-radius: 18px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+                padding-left: 0.7rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .hero-sub {
+                font-size: 1rem;
+            }
+            .note {
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (min-width: 768px) {
+            .card {
+                padding: 2.2rem 2.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- HERO 摘要卡片 -->
+    <div class="card" style="padding-bottom: 1.8rem;">
+        <h1>日常查询·对照·延伸阅读</h1>
+        <p class="hero-sub">
+            从一场比赛、一个数据、一段回顾出发——<br>
+            把零散的信息变成有条理的参照。
+        </p>
+        <p style="margin-top: 1.5rem; max-width: 680px;">
+            无论是赛前快速翻阅阵容，还是赛后对比技术统计，<a href="https://portal-main-yuyan.com">雨燕直播</a>
+            提供的界面更偏重「对照」——把赛程、比分、球员数据并排呈现，减少来回切换的负担。
+            它不是一个灌输结论的平台，而是一个供你自行查阅、横向比较的工具。
+        </p>
+        <div class="note">
+            ⚡ 适合当作第二屏幕的查询页，也适合复盘时逐项对照。
+        </div>
+    </div>
+
+    <!-- 特点 / 亮点 卡片 -->
+    <div class="card">
+        <h2>对照式布局 · 信息平权</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>多场并列</h4>
+                <p>同时显示多场赛事的基础数据，不用反复切标签页；适合观察同时段比赛。</p>
+            </div>
+            <div class="feature-item">
+                <h4>阶段筛选</h4>
+                <p>按节次、半场或自定义时间段查看统计，对照不同阶段的节奏变化。</p>
+            </div>
+            <div class="feature-item">
+                <h4>引用便捷</h4>
+                <p>单场比赛的摘要、关键球员数据可以直接引用到讨论或笔记里，结构清晰。</p>
+            </div>
+            <div class="feature-item">
+                <h4>延伸入口</h4>
+                <p>从一场比赛可以延伸查看历史交锋、同联赛数据，形成自己的参考链。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 场景 / 使用建议 卡片 -->
+    <div class="card">
+        <h2>使用建议 · 从实际场景出发</h2>
+        <ul class="usage-list">
+            <li>
+                <strong>赛前排查</strong> 通过 <a href="https://portal-main-yuyan.com">雨燕直播</a> 的赛程页面快速浏览未来几日的对阵，把关注的场次标记出来，方便第二天直接进入。
+            </li>
+            <li>
+                <strong>实时对照</strong> 观看直播时，保持页面打开，把解说提到的数据和页面显示的数据对照一下，有时会发现不一样的解读角度。
+            </li>
+            <li>
+                <strong>赛后延伸</strong> 比赛结束后，利用页面内的数据表格做简单的延伸阅读——比如某位球员近期状态、两队交手记录的趋势。
+            </li>
+            <li>
+                <strong>安静查阅</strong> 页面没有过多推送或弹窗，适合只想安静查数据、不被打扰的使用习惯。
+            </li>
+        </ul>
+        <p style="margin-top: 1rem; color: #2b4563;">
+            这些场景都不要求长时间停留，更像是「需要时打开，用完即走」的工具型使用方式。
+        </p>
+    </div>
+
+    <!-- FAQ 摘要 卡片 -->
+    <div class="card">
+        <h2>常见疑问摘要</h2>
+        <div class="faq-slim">
+            <div>
+                <span class="q">数据更新频率如何？</span>
+                <span class="a">常规赛事实时更新，延迟通常在几十秒内，建议以官方计时为准。</span>
+            </div>
+            <div>
+                <span class="q">是否覆盖所有联赛？</span>
+                <span class="a">以主流联赛和杯赛为主，部分低级别或区域性赛事可能未收录，可以搜索确认。</span>
+            </div>
+            <div>
+                <span class="q">页面需要注册吗？</span>
+                <span class="a">日常查询、对照数据无需注册，直接使用即可；部分延伸功能可能建议登录。</span>
+            </div>
+            <div>
+                <span class="q">移动端适配怎样？</span>
+                <span class="a">页面采用响应式布局，手机浏览器横竖屏均能正常阅读，卡片式设计对触屏友好。</span>
+            </div>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.95rem; color: #4b637f;">
+            更多细节可以在使用过程中逐渐熟悉，也可以直接到 <a href="https://portal-main-yuyan.com">雨燕直播</a>
+            中体验具体的对照方式。
+        </p>
+    </div>
+
+    <!-- 简短的信任 / 克制约访 -->
+    <div class="card" style="text-align: center; padding: 1.6rem 2rem;">
+        <p style="margin-bottom: 0.3rem; font-size: 0.95rem; color: #406080;">
+            页面所展示的信息均来自公开可查的数据源，<br>
+            不提供任何形式的预测、推荐或诱导性内容。
+        </p>
+        <p style="color: #4a6580; margin-top: 0.4rem;">
+            你可以把 <a href="https://portal-main-yuyan.com">雨燕直播</a>
+            当作一个安静的参考页，按自己的节奏查阅就好。
+        </p>
+    </div>
+</div>
+</body>
+</html>
